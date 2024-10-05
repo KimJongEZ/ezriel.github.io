@@ -1,0 +1,192 @@
+/* General Styles */
+body {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #00ffff; /* Black background */
+  color: #fff; /* White text */
+  font-size: 1em;
+  background: linear-gradient(135deg, #00ffff, #008080); /* Example gradient */
+}
+
+.container {
+  max-width: 1200px; /* Adjust max width as needed */
+  margin: 0 auto; /* Centers the container */
+  padding: 20px; /* Optional: padding around the content */
+}
+
+header {
+  background: url(San_Jose_State_University_DSC03875-e1642709202942.jpg)
+    no-repeat center center;
+  /* Replace with your image file */
+  background-size: cover; /* Makes the image cover the entire header */
+  color: #f0f0f0;
+  padding: 140px 0;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.header-content {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  display: inline-block; /* Makes the box only as wide as its content */
+  padding: 20px; /* Padding inside the box */
+  border-radius: 10px; /* Rounded corners for the box */
+}
+
+.about-container {
+  display: flex; /* Use flexbox to align items side by side */
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.headshot {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Optional: make it a circle */
+  margin-right: 20px; /* Space between image and text */
+}
+
+h1,
+p {
+  color: #fff; /* Light gray for readability */
+  margin: 0; /* Remove default margin */
+  font-size: 1em;
+}
+
+nav {
+  background: #008080; /* Purple nav */
+  color: #fff;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  background: #333; /* Dark background for sections */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+  color: #00ffff; /* Purple headings */
+  font-size: 2.4em;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #222;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #6a0dad; /* Purple border */
+  border-radius: 5px;
+  background: #555; /* Dark input background */
+  color: #fff; /* White text in inputs */
+}
+
+button {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  padding: 10px;
+  background: #6a0dad; /* Purple button */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5e0aa1; /* Darker purple on hover */
+}
+
+/* Project Styles */
+.project {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #6a0dad; /* Purple border */
+  border-radius: 5px;
+}
+
+.project a {
+  color: #6a0dad; /* Purple link color */
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.portfolio-item {
+  margin: 20px 0; /* Space between portfolio items */
+  text-align: center; /* Center the text below the image */
+}
+
+.portfolio-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 400px; /* Optional: set a max width */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Default link color */
+a {
+  color: #00ffff; /* Change this to your desired color */
+  text-decoration: none; /* Optional: removes the underline */
+}
+
+/* Link color when hovered */
+a:hover {
+  color: #ff00ff; /* Change this to your desired hover color */
+  text-decoration: underline; /* Optional: adds underline on hover */
+}
+
+/* Visited link color */
+a:visited {
+  color: #00ffff; /* Change this to your desired color for visited links */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  section {
+    margin: 10px;
+  }
+}
